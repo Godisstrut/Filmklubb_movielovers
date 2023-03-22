@@ -1,0 +1,170 @@
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: beige;
+}
+
+#container > header {
+    position: fixed;
+    left: 0px;;
+    right: 0px;
+    top:0px;
+    z-index: 1;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+}
+
+header a {
+    color: #eee;
+    text-decoration: none;
+    line-height: 60px;
+    margin: 20px;
+    font-size: 25px;
+    padding: 13px;
+}
+
+section {
+    margin: 80px;
+    grid-area: section;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+aside {
+    margin-top: 80px;
+    grid-area: aside;
+    padding-right: 20px;
+}
+
+footer {
+    margin-top: 80px;
+    grid-area: footer;
+    padding-left: 20px;
+    text-align: center;
+}
+
+#container > header a:hover {
+    background-color:#1e5799;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+    grid-template-areas:
+    "header header header"
+    "section section aside"
+    "footer footer footer"
+}
+
+aside > img {
+    width: 80%;
+    height: 80%;
+}
+
+img {
+    width: 60%
+}
+
+p {
+    font-size: larger;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+section a:hover {
+    color: yellow;
+}
+
+li {
+    font-size: larger;
+}
+
+a:hover {
+    color: white;
+}
+
+h2 {
+    padding-top: 20px;
+}
+
+#movies {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#movies > article img {
+    width: 80%;
+    height: 80%;
+}
+
+#form {
+    font-size: larger;
+}
+
+#tips, #genre, #description {
+    padding-top: 10px;
+}
+
+#button {
+    display: flex;
+    font-size: 20px;
+}
+
+aside a:hover {
+    color: yellow;
+}
+
+legend {
+    font-size: 35px
+}
+
+@media screen and (max-width: 1100px) {
+    #container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header" 
+        "section"
+        "aside"
+        "footer";
+    }
+
+    #container > aside {
+        margin-top: 10px;
+    }
+
+    #container > section {
+        margin: 60px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "header" 
+        "section"
+        "aside"
+        "footer";
+    }
+    
+    #container > section {
+        margin-top: 120px;
+    }
+    
+}

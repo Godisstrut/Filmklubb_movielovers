@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <title>Filmklubben MovieLovers!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="CuteSeal.jpg" rel="icon">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav>
+                    <div id="menu">
+                        <a href="index.html">Start</a>
+                        <a href="movies.html">Filmer</a>
+                        <a href="about.html">Om</a>
+                        <a href="contact.html">Kontakt</a>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <h1>Kom gärna med förslag!</h1>
+                <p>Berätta gärna vilka spännande filmer vi ska se härnäst, du vet kanske en klassiker vi missat? Kontakta oss gärna genom formuläret nedan med titel på filmen, tips om var man ser den te.x Netflix, genre och en liten kort beskrivning om filmen. Var inte rädd att berätta vad tyckte om rullen också!</p>
+                <div id="form">
+                    <form action="thanks.html" method="get">
+                        <fieldset>
+                            <legend>Filmförslag!</legend>
+                            <div id="titel">
+                                <label for="name">Titel</label>
+                                <input type="text" name="titel" id="name" placeholder="Filmtitel">
+                            </div> 
+                            <div id="tips">
+                                <label for="comment">Tips</label>
+                                <input type="text" name="description" id="comment" placeholder="Var kan man se filmen">
+                            </div>
+                            <div id="genre">
+                            <label>Genre</label>
+                                <select name="genre">
+                                    <option>Drama</option>
+                                    <option>Action</option>
+                                    <option>Komedi</option>
+                                    <option>Thriller</option>
+                                    <option>Sci-fi</option>
+                                    <option>Fantasy</option>
+                                    <option>Äventyr</option>
+                                </select>
+                            </div>
+                            <div id="description">
+                                <label>Kort Beskrivning av filmen</label>
+                            </div>
+                                <textarea name="Handling" cols="50" rows="20"></textarea>
+                            <input type="submit" value="skicka" id="button">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+            <footer>
+                <p>Webbplatsen är gjord och underhållen Erik Henningsson</p>
+                <p>Made in 2022</p>
+            </footer>
+        </div>
+    </body>
+</html>
