@@ -1,0 +1,20 @@
+{
+  "version": "2.2.0",
+  "summary": {
+    "title": "Whatsapp threat model",
+    "owner": "Godisstrut",
+    "description": "A threat analysis of the popular messaging app Whatsapp",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "LucasAsker"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
